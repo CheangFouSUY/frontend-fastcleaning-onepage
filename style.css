@@ -1,0 +1,256 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    --main-dark: #252A34;
+    --secondary-dark: #252A3499;
+    /* the 99 at the end of --secondary-dark is hex for 60% opacity */
+    --main-light: #08D9D6;
+    --secondary-light: #EAEAEA;
+    --selected: #FF2E63;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.iconify {
+    color: var(--main-light);
+    font-size: 50px;
+}
+
+p, h1 {
+    color: var(--main-dark);
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.title-2 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.txt-light {
+    color: var(--main-light) !important;
+}
+
+.lead {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: var(--secondary-dark);
+}
+
+.m-20{
+    margin:20px;
+}
+
+.mtb-20 {
+    margin: 20px 0px;
+}
+
+.p-20{
+    padding: 20px;
+}
+
+.m-10 {
+    margin:10px;
+}
+
+.p-10 {
+    padding:10px;
+}
+
+.bl-1 {
+    border-left: 1px solid var(--main-dark);
+}
+
+/* Button */
+.btn {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 100px;
+    color: var(--secondary-light);
+    border: 0px;
+    background-color: var(--main-dark); 
+}
+
+.btn-light {
+    background-color: var(--main-light);
+}
+
+.btn:hover {
+    background-color: var(--selected);
+}
+
+a:hover {
+    color: var(--selected) !important;
+}
+
+/* Bookmark */
+.bookmark {
+    height: 60px;
+    width: 300px;
+    background-color: var(--main-dark);
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--secondary-light);
+}
+
+
+/* Header/Navbar */
+header {
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    right:0;
+    left:0;
+    height: 90px;
+    padding: 0 50px;
+    background-color: var(--main-dark);
+    display:flex;
+    justify-content: space-between;
+
+}
+
+header h1 {
+    display:flex;
+    align-items: center;
+    color: var(--secondary-light);
+    font-size: 30px;
+}
+
+header span {
+    color:var(--main-light);
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header .nav-item {
+    color: var(--secondary-light);
+    text-decoration: none;
+    margin: 0;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.selected {
+    color: var(--selected) !important;
+}
+
+
+/* Showcase/Home */
+#home {
+    background-image: url(./img/slide-1.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+#home .showcase-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    /* Opacity */
+    background: rgba(255,255,255,0.5);
+
+}
+
+#home .title, #home .subtitle, #home .btn {
+    margin: 30px auto;
+}
+
+/* Services */
+#services .container {
+    margin: 200px 50px;
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+}
+
+#services .service-item {
+    height: 100%;
+    width: 31%;
+    border: 0px;
+    border-radius: 10px 10px 10px 100px;
+    -moz-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 60px;
+}
+
+#services .iconify {
+    margin-bottom: 30px;
+    font-size: 70px;
+}
+
+#services .service-name {
+    font-size: 25px;
+}
+
+#services .service-learnmore {
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--main-light);
+}
+
+
+/* About Us */
+
+#aboutus .aboutus-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#aboutus .summary {
+    display: flex;
+    text-align: left;
+}
+
+#aboutus .summary-item {
+    width: 25%;
+}
+
+#aboutus .aboutus-section, #aboutus .headline {
+    margin: 50px 100px;
+}
+
+#aboutus .headline {
+    font-size: 40px;
+}
+
+#aboutus .summary-number {
+    font-size: 80px;
+}
+
+#aboutus .profile {
+    margin: 40px auto;
+    height: 300px;
+    width: 300px;
+    background-image: url(./img/chairman-profile.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#aboutus .chairman a {
+    text-decoration: none;
+}
