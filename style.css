@@ -174,11 +174,12 @@ header .nav-item {
     align-items: center; 
     /* Opacity */
     background: rgba(255,255,255,0.5);
-
+    text-align: center;
 }
 
 #home .title, #home .subtitle, #home .btn {
     margin: 1.5% auto;
+    
 }
 
 /* Services */
@@ -341,7 +342,7 @@ footer {
         font-size: 0.8rem;
     }
     
-    .iconify {
+    header .iconify {
         font-size: 3rem;
     }
     /* Header */
@@ -390,37 +391,6 @@ footer {
         font-size: 1.5rem;
     }
 
-    #contactus .map {
-        height:450px;
-    }
-
-    /* Footer */
-    footer {
-        height: 40px;
-        font-size: 1rem;
-    }
-}
-
-@media only screen and (max-width:768px){
-    .title {
-        font-size: 2.3rem;
-    }
-    /* Services */
-
-    #services .iconify{
-        font-size: 4rem;
-    }
-
-    /* About Us */
-    #aboutus .headline {
-        font-size: 1.8rem;
-    }
-
-    #aboutus .summary-number {
-        font-size: 2.8rem;
-    }
-
-    /* Contact Us */
     #contactus .two-section {
         flex-direction: column;
         justify-content: space-between;
@@ -434,14 +404,143 @@ footer {
     }
 
     #contactus .map {
+        height: 250px;
+    }    
+
+
+    /* Footer */
+    footer {
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .title {
+        font-size: 2.3rem;
+    }
+
+    .bookmark {
+        font-size: 1rem;
+    }
+    /* Services */
+
+    #services .iconify{
+        font-size: 4rem;
+    }
+
+    
+    #services .service-item{
+        width: 85%;
+        align-items: center;
+        border-radius: 10px 100px 10px 100px;
+        text-align: center;
+    }
+
+    /* About Us */
+    #aboutus .headline {
+        font-size: 1.8rem;
+    }
+
+    #aboutus .summary {
+        flex-wrap: wrap;
+    }
+
+    #aboutus .summary-item {
+        border: 0px;
+        width: 50%;
+        text-align: center;
+    }
+
+
+    #aboutus .summary-number {
+        font-size: 2.8rem;
+    }
+
+    #aboutus .chairman .profile {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Contact Us */
+
+    #contactus .map {
         height: 200px;
     }    
+
 
     /* Footer */
     footer {
         height: 40px;
         font-size: 0.8rem;
     }
+}
+
+@media only screen and (max-width:640px){
+    .title {
+        font-size: 2rem;
+    }
+
+    
+    /* Header */
+    header .iconify {
+        font-size: 2.5rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding:0px;
+        background-color: var(--secondary-dark);
+        height: 4rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        background-color: var(--main-dark);
+        margin: 0px 10px;
+        padding: 0.3rem 50%;
+
+    }
+
+    header ul {
+        margin: 0;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media only screen and (max-width:425px){
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        width: 150px;
+    }
+
+    .bookmark {
+        font-size: 0.8rem;
+    }
+
+    #services .service-item .service-name{
+        font-size: 1.2rem;
+    }
+
+    #services .service-learnmore {
+        font-size: 1rem;
+    }
+
+
+    #aboutus .headline {
+        font-size: 1.3rem;
+    }
+
+    #contactus .map {
+        height: 150px;
+    }
+
 
 
 }
