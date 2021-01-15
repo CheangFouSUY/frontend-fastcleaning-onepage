@@ -13,7 +13,7 @@
 
 .iconify {
     color: var(--main-light);
-    font-size: 50px;
+    font-size: 4rem;
 }
 
 p, h1 {
@@ -21,26 +21,21 @@ p, h1 {
 }
 
 .title {
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: bold;
 }
 
 .title-2 {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .txt-light {
     color: var(--main-light) !important;
 }
 
-.lead {
-    font-weight: bold;
-    font-size: 50px;
-}
-
 .subtitle {
-    font-size: 18px;
+    font-size: 1rem;
     color: var(--secondary-dark);
 }
 
@@ -76,7 +71,7 @@ p, h1 {
 .btn {
     width: 200px;
     height: 50px;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bold;
     border-radius: 100px;
     color: var(--secondary-light);
@@ -99,13 +94,13 @@ a:hover {
 /* Bookmark */
 .bookmark {
     height: 60px;
-    width: 300px;
+    width: 30%;
     background-color: var(--main-dark);
     margin: 100px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: var(--secondary-light);
 }
@@ -138,7 +133,7 @@ header h1 {
     display:flex;
     align-items: center;
     color: var(--secondary-light);
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 header span {
@@ -183,7 +178,7 @@ header .nav-item {
 }
 
 #home .title, #home .subtitle, #home .btn {
-    margin: 30px auto;
+    margin: 1.5% auto;
 }
 
 /* Services */
@@ -205,16 +200,16 @@ header .nav-item {
 }
 
 #services .iconify {
-    margin-bottom: 30px;
-    font-size: 70px;
+    margin-bottom: 3%;
+    font-size: 5rem;
 }
 
 #services .service-name {
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 #services .service-learnmore {
-    font-size: 22px;
+    font-size: 1.3rem;
     text-decoration: none;
     color: var(--main-light);
 }
@@ -239,19 +234,19 @@ header .nav-item {
 }
 
 #aboutus .aboutus-section, #aboutus .headline {
-    margin: 50px 100px;
+    margin: 5% 10%;
 }
 
 #aboutus .headline {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 #aboutus .summary-number {
-    font-size: 80px;
+    font-size: 5rem;
 }
 
 #aboutus .profile {
-    margin: 40px auto;
+    margin: 4% auto;
     height: 300px;
     width: 300px;
     background-image: url(./img/chairman-profile.jpg);
@@ -261,7 +256,7 @@ header .nav-item {
 
 #aboutus .chairman a {
     text-decoration: none;
-    margin: 0px 20px;
+    margin: 0px 2%;
 }
 
 /* Contact Us */
@@ -269,7 +264,7 @@ header .nav-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 200px 50px;
+    margin: 15% 5%;
 }
 
 #contactus .contactus-item {
@@ -286,14 +281,14 @@ header .nav-item {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 20px 0px;
+    margin: 2% 0%;
 }
 
 #contactus .subtitle {
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: bold;
     color: var(--main-dark);
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 
 #contactus .form-item input, #contactus .form-item textarea {
@@ -301,7 +296,7 @@ header .nav-item {
     border-radius: 10px;
     margin-left: 10px;
     padding: 13px 30px;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -315,13 +310,13 @@ header .nav-item {
 }
 
 #contactus .btn {
-    width: 90%;
+    width: 100%;
     float: right;
 }
 
 #contactus .map {
     height: 500px;
-    width: 500px;
+    width: 100%;
     background-image: url(./img/chairman-profile.jpg);
     background-size: cover;
 }
@@ -331,8 +326,122 @@ footer {
     background-color: var(--main-dark);
     color: var(--secondary-light);
     height: 80px;
-    font-size: 25px;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+@media only screen and (max-width: 1024px){
+    .title {
+        font-size: 2.5rem;
+    }
+    .title-2, .subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .iconify {
+        font-size: 3rem;
+    }
+    /* Header */
+    header {
+        height: 70px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header li {
+        font-size: 0.8rem;
+    }
+
+    /* container */
+    #services .container {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        margin: 10%;
+    }
+
+    #services .service-item{
+        margin: 5% 0%;
+        width: 50%;
+        padding: 2% 10%;
+    }
+
+    /* About Us */
+    #aboutus .headline {
+        font-size: 2rem;
+    }
+
+    #aboutus .summary-number {
+        font-size: 3.5rem;
+    }
+
+    #aboutus .chairman .title-2 {
+        font-size: 1rem;
+    }
+
+    /* Contact Us */
+
+    #contactus .subtitle {
+        font-size: 1.5rem;
+    }
+
+    #contactus .map {
+        height:450px;
+    }
+
+    /* Footer */
+    footer {
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .title {
+        font-size: 2.3rem;
+    }
+    /* Services */
+
+    #services .iconify{
+        font-size: 4rem;
+    }
+
+    /* About Us */
+    #aboutus .headline {
+        font-size: 1.8rem;
+    }
+
+    #aboutus .summary-number {
+        font-size: 2.8rem;
+    }
+
+    /* Contact Us */
+    #contactus .two-section {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5%;
+    }
+
+    #contactus .contactus-item {
+        width: 90%;
+        margin: 5% 0%;
+    }
+
+    #contactus .map {
+        height: 200px;
+    }    
+
+    /* Footer */
+    footer {
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+
 }
