@@ -85,6 +85,7 @@ p, h1 {
 
 .btn:hover {
     background-color: var(--selected);
+    transform: scale(1.05);
 }
 
 a:hover {
@@ -103,6 +104,10 @@ a:hover {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--secondary-light);
+}
+
+.bookmark:hover {
+    transform: scale(1.05);
 }
 
 /* Box Shadow */
@@ -200,6 +205,10 @@ header .nav-item {
     padding: 0px 60px;
 }
 
+#services .service-item:hover {
+    transform: scale(1.05);
+}
+
 #services .iconify {
     margin-bottom: 3%;
     font-size: 5rem;
@@ -255,6 +264,10 @@ header .nav-item {
     border-radius: 50%;
 }
 
+#aboutus .profile:hover {
+    transform: scale(1.05);
+}
+
 #aboutus .chairman a {
     text-decoration: none;
     margin: 0px 2%;
@@ -299,6 +312,10 @@ header .nav-item {
     padding: 13px 30px;
     font-size: 1rem;
     font-weight: bold;
+}
+
+#contactus .form-item:hover{
+    transform: scale(1.05);
 }
 
 #contactus .form-item input {
