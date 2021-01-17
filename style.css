@@ -97,7 +97,7 @@ a:hover {
     height: 60px;
     width: 30%;
     background-color: var(--main-dark);
-    margin: 100px 0px;
+    margin: 50px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,7 +189,7 @@ header .nav-item {
 
 /* Services */
 #services .container {
-    margin: 200px 50px;
+    margin: 100px 50px;
     display: flex;
     height: 350px;
     justify-content: space-between;
@@ -278,7 +278,7 @@ header .nav-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15% 5%;
+    margin: 50px 5%;
 }
 
 #contactus .contactus-item {
